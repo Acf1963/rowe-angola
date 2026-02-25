@@ -1,0 +1,11 @@
+{
+  "products": {
+    "title": "Our Products",
+    "ligeiros": "Passenger Cars",
+    "pesados": "Heavy Duty",
+    "transmissions": "Transmissions",
+    "brakeFluid": "Brake Fluid",
+    "agricola": "Agricultural Equipment",
+    "construcaoMineracao": "Construction, Mining and Material Handling"
+  }
+}

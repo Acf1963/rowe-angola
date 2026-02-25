@@ -1,0 +1,11 @@
+{
+  "products": {
+    "title": "Os Nossos Produtos",
+    "ligeiros": "Ligeiros",
+    "pesados": "Pesados",
+    "transmissions": "Transmissões",
+    "brakeFluid": "Óleo de Travões",
+    "agricola": "Equipamentos Agrícolas",
+    "construcaoMineracao": "Construção, Mineração e Movimentação de Materiais"
+  }
+}

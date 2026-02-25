@@ -1,0 +1,11 @@
+{
+  "products": {
+    "title": "Unsere Produkte",
+    "ligeiros": "PKW",
+    "pesados": "LKW",
+    "transmissions": "Getriebeöle",
+    "brakeFluid": "Bremsflüssigkeit",
+    "agricola": "Landmaschinen",
+    "construcaoMineracao": "Bau, Bergbau und Materialtransport"
+  }
+}

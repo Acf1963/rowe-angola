@@ -1,0 +1,11 @@
+{
+  "products": {
+    "title": "Nos Produits",
+    "ligeiros": "Véhicules Légers",
+    "pesados": "Poids Lourds",
+    "transmissions": "Transmissions",
+    "brakeFluid": "Liquide de Freins",
+    "agricola": "Équipements Agricoles",
+    "construcaoMineracao": "Construction, Mines et Manutention"
+  }
+}
