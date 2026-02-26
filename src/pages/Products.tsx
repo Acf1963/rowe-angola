@@ -5,7 +5,7 @@ export default function ProductsPage({ t }: any) {
     {
       key: "ligeiros",
       label: t.products.ligeiros,
-      img: "/src/assets/products/ligeiros.webp",
+      img: "/public/images/products/ligeiros.webp",
       icon: (
         <svg className="w-10 h-10 text-yellow-400" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
           <path d="M3 13l2-5h14l2 5M5 13h14M7 17a2 2 0 110-4 2 2 0 010 4zm10 0a2 2 0 110-4 2 2 0 010 4z" />
@@ -18,7 +18,7 @@ export default function ProductsPage({ t }: any) {
     {
       key: "pesados",
       label: t.products.pesados,
-      img: "/src/assets/products/pesados.png",
+      img: "/public/images/products/pesados.png",
       icon: (
         <svg className="w-10 h-10 text-yellow-400" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
           <path d="M3 16V7h13v9M16 10h4l1 3v3h-5zM7 17a2 2 0 110-4 2 2 0 010 4zm10 0a2 2 0 110-4 2 2 0 010 4z" />
@@ -31,7 +31,7 @@ export default function ProductsPage({ t }: any) {
     {
       key: "transmissions",
       label: t.products.transmissions,
-      img: "/src/assets/products/transmissões.webp",
+      img: "/public/images/products/transmissoes.webp",
       icon: (
         <svg className="w-10 h-10 text-yellow-400" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
           <path d="M12 4v2m0 12v2m8-8h-2M6 12H4m12.95 4.95l-1.41-1.41M8.46 8.46L7.05 7.05m9.9 0l-1.41 1.41M8.46 15.54l-1.41 1.41" />
@@ -44,7 +44,7 @@ export default function ProductsPage({ t }: any) {
     {
       key: "brake-fluid",
       label: t.products.brakeFluid,
-      img: "/src/assets/products/travões.webp",
+      img: "/public/images/products/travoes.webp",
       icon: (
         <svg className="w-10 h-10 text-yellow-400" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
           <path d="M12 2v4m0 12v4m-6-8h12M6 6l12 12" />
@@ -57,7 +57,7 @@ export default function ProductsPage({ t }: any) {
     {
       key: "agricola",
       label: t.products.agricola,
-      img: "/src/assets/products/eqp-agri.webp",
+      img: "/public/images/products//eqp-agri.webp",
       icon: (
         <svg className="w-10 h-10 text-yellow-400" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
           <path d="M4 15h4l2-4 3 6h7" />
@@ -72,7 +72,7 @@ export default function ProductsPage({ t }: any) {
     {
       key: "construcao-mineracao",
       label: t.products.construcaoMineracao,
-      img: "/src/assets/products/construcao-mineracao.webp",
+      img: "/public/images/products/construcao-mineracao.webp",
       icon: (
         <svg className="w-10 h-10 text-yellow-400" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
           <path d="M3 17h18l-3-7h-5l-2-4H6z" />
