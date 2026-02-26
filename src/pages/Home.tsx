@@ -10,7 +10,7 @@ export default function Home({ t }) {
         justify-center
         text-center
         px-6
-        pt-46
+        pt-44
       "
     >
       <h1 className="text-4xl md:text-6xl font-extrabold text-white max-w-4xl">
@@ -21,7 +21,7 @@ export default function Home({ t }) {
         {t.hero.subtitle}
       </p>
 
-      <div className="mt-10 flex gap-4 flex-wrap justify-center">
+      <div className="mt-8 flex gap-4 flex-wrap justify-center">
         <a
           href="/produtos"
           className="px-8 py-3 bg-red-600 hover:bg-red-700 rounded-lg font-semibold transition shadow-lg text-white"
@@ -36,6 +36,27 @@ export default function Home({ t }) {
         >
           ROWE Racing
         </a>
+      </div>
+
+      {/* LOGOS BMW / PORSCHE */}
+      <div className="mt-10 flex flex-col items-center">
+        <span className="text-xs uppercase tracking-widest text-yellow-400 mb-4">
+          Homologações de fabricantes
+        </span>
+
+        <div className="flex items-center gap-12">
+          <img
+            src="/images/logo/bmw.png"
+            alt="BMW"
+            className="h-16 opacity-70 hover:opacity-100 transition"
+          />
+
+          <img
+            src="/images/logo/porsche.png"
+            alt="Porsche"
+            className="h-16 opacity-70 hover:opacity-100 transition"
+          />
+        </div>
       </div>
     </section>
   );
