@@ -16,7 +16,7 @@ import ContactPage from "@/pages/Contact";
 const translations = {
   ao: {
     hero: {
-      title: "A Paixão Alemã pela Performance agora em Angola",
+      title: "O Perfeccionismo Alemão pela Performance agora em Angola",
       subtitle:
         "Lubrificantes HIGHTEC de última geração, desenhados para resistir ao calor extremo e proteger o seu motor nas condições mais exigentes.",
       cta: "Ver Catálogo",
@@ -70,7 +70,7 @@ const translations = {
 
   gb: {
     hero: {
-      title: "German Passion for Performance now in Angola",
+      title: "German Perfectionism for Performance, now in Angola",
       subtitle:
         "Next‑generation HIGHTEC lubricants, designed to withstand extreme heat and protect your engine in the most demanding conditions.",
       cta: "View Catalog",
@@ -124,7 +124,7 @@ const translations = {
 
   de: {
     hero: {
-      title: "Deutsche Leidenschaft für Leistung jetzt in Angola",
+      title: "Deutsche Perfektion für Performance, jetzt in Angola",
       subtitle:
         "HIGHTEC‑Schmierstoffe der nächsten Generation, entwickelt für extreme Hitze und zum Schutz Ihres Motors unter anspruchsvollsten Bedingungen.",
       cta: "Katalog ansehen",
@@ -178,7 +178,7 @@ const translations = {
 
   fr: {
     hero: {
-      title: "La Passion Allemande pour la Performance maintenant en Angola",
+      title: "Le Perfectionnisme Allemande pour la Performance maintenant en Angola",
       subtitle:
         "Lubrifiants HIGHTEC de nouvelle génération, conçus pour résister à la chaleur extrême et protéger votre moteur dans les conditions les plus exigeantes.",
       cta: "Voir le Catalogue",

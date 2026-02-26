@@ -1,17 +1,11 @@
 import { Link } from "react-router-dom";
-import aoFlag from "@/assets/flags/ao.png";
-import gbFlag from "@/assets/flags/gb.png";
-import deFlag from "@/assets/flags/de.png";
-import frFlag from "@/assets/flags/fr.png";
-
-import logo from "@/assets/logo/lg02.png";
 
 export default function Header({ lang, setLang }: any) {
   const languages = [
-    { code: "ao", label: "AO", flag: aoFlag },
-    { code: "gb", label: "EN", flag: gbFlag },
-    { code: "de", label: "DE", flag: deFlag },
-    { code: "fr", label: "FR", flag: frFlag },
+    { code: "ao", label: "AO", flag: "/images/flags/ao.png" },
+    { code: "gb", label: "EN", flag: "/images/flags/gb.png" },
+    { code: "de", label: "DE", flag: "/images/flags/de.png" },
+    { code: "fr", label: "FR", flag: "/images/flags/fr.png" },
   ];
 
   return (
@@ -29,7 +23,7 @@ export default function Header({ lang, setLang }: any) {
         {/* LOGO + ANGOLA */}
         <div className="flex items-center gap-30">
           <img
-            src={logo}
+            src="/images/logo/lg02.png"
             alt="ROWE"
             className="
               h-10 w-auto object-contain
@@ -43,7 +37,6 @@ export default function Header({ lang, setLang }: any) {
             ANGOLA
           </span>
         </div>
-
 
         {/* NAV */}
         <nav className="flex gap-6 text-base font-bold">
@@ -71,6 +64,7 @@ export default function Header({ lang, setLang }: any) {
             </button>
           ))}
         </div>
+
       </div>
     </header>
   );
