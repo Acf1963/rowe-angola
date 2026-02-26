@@ -30,7 +30,7 @@ export default function Home({ t }) {
         </a>
 
         <a
-          href="https://www.rowe-racing.com/"
+          href="https://www.rowe-oil.com/en/rowe-racing"
           target="_blank"
           className="px-8 py-3 bg-blue-900 hover:bg-blue-950 rounded-lg font-semibold transition shadow-lg text-white"
         >
