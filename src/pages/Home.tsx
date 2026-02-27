@@ -20,7 +20,7 @@ export default function Home({ t }: any) {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="text-4xl md:text-6xl font-extrabold text-white max-w-4xl"
+        className="text-3xl sm:text-4xl md:text-6xl font-extrabold text-white max-w-4xl italic"
       >
         {t.hero.title}
       </motion.h1>
@@ -30,7 +30,7 @@ export default function Home({ t }: any) {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="mt-6 text-lg md:text-xl text-white/90 max-w-3xl leading-relaxed"
+        className="mt-6 text-lg md:text-xl text-white/90 max-w-3xl leading-relaxed italic"
       >
         {t.hero.subtitle}
       </motion.p>
