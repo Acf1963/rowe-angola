@@ -10,7 +10,7 @@ import HistoryPage from "@/pages/History";
 import ContactPage from "@/pages/Contact";
 
 // ======================================================
-//  SISTEMA DE TRADUÇÕES CENTRALIZADO E REFACTORIZADO
+//  SISTEMA DE TRADUÇÕES COMPLETO E HARMONIZADO
 // ======================================================
 
 const translations = {
@@ -20,13 +20,26 @@ const translations = {
       subtitle:
         "Lubrificantes HIGHTEC de última geração, desenhados para resistir ao calor extremo e proteger o seu motor nas condições mais exigentes.",
       cta: "Ver Catálogo",
+      approvals: "Homologações Oficiais",
     },
 
     products: {
       title: "Gama Angola",
+
       ligeiros: "Veículos Ligeiros",
+      ligeiros_desc:
+        "Lubrificantes HIGHTEC formulados para motores modernos, garantindo máxima proteção térmica e eficiência.",
+      ligeiros_certs: ["API SP", "ACEA C3", "BMW LL‑04", "MB 229.52"],
+
       pesados: "Veículos Pesados",
+      pesados_desc:
+        "Óleos de elevada resistência para motores diesel de carga, desenvolvidos para longos intervalos e condições severas.",
+      pesados_certs: ["API CK‑4", "ACEA E9", "Volvo VDS‑4.5"],
+
       transmissions: "Transmissões",
+      transmissions_desc:
+        "Fluidos de transmissão automáticos e manuais com estabilidade térmica superior e proteção anti‑desgaste.",
+      transmissions_certs: ["ATF Dexron VI", "ZF TE‑ML 11", "MB 236.14"],
 
       brakeFluid: "Óleo de Travões",
       brakeFluid_desc:
@@ -74,13 +87,26 @@ const translations = {
       subtitle:
         "Next‑generation HIGHTEC lubricants, designed to withstand extreme heat and protect your engine in the most demanding conditions.",
       cta: "View Catalog",
+      approvals: "Official Approvals",
     },
 
     products: {
       title: "Angola Range",
+
       ligeiros: "Light Vehicles",
+      ligeiros_desc:
+        "HIGHTEC lubricants formulated for modern engines, ensuring maximum thermal protection and efficiency.",
+      ligeiros_certs: ["API SP", "ACEA C3", "BMW LL‑04", "MB 229.52"],
+
       pesados: "Heavy Vehicles",
+      pesados_desc:
+        "High‑resistance oils for heavy‑duty diesel engines, developed for long intervals and severe operating conditions.",
+      pesados_certs: ["API CK‑4", "ACEA E9", "Volvo VDS‑4.5"],
+
       transmissions: "Transmissions",
+      transmissions_desc:
+        "Automatic and manual transmission fluids with superior thermal stability and anti‑wear protection.",
+      transmissions_certs: ["ATF Dexron VI", "ZF TE‑ML 11", "MB 236.14"],
 
       brakeFluid: "Brake Fluid",
       brakeFluid_desc:
@@ -128,13 +154,26 @@ const translations = {
       subtitle:
         "HIGHTEC‑Schmierstoffe der nächsten Generation, entwickelt für extreme Hitze und zum Schutz Ihres Motors unter anspruchsvollsten Bedingungen.",
       cta: "Katalog ansehen",
+      approvals: "Offizielle Freigaben",
     },
 
     products: {
       title: "Angola Sortiment",
+
       ligeiros: "PKW",
+      ligeiros_desc:
+        "HIGHTEC‑Schmierstoffe für moderne Motoren, die maximalen thermischen Schutz und Effizienz gewährleisten.",
+      ligeiros_certs: ["API SP", "ACEA C3", "BMW LL‑04", "MB 229.52"],
+
       pesados: "LKW",
+      pesados_desc:
+        "Hochbeständige Öle für schwere Dieselmotoren, entwickelt für lange Intervalle und harte Einsatzbedingungen.",
+      pesados_certs: ["API CK‑4", "ACEA E9", "Volvo VDS‑4.5"],
+
       transmissions: "Getriebe",
+      transmissions_desc:
+        "Automatik‑ und Schaltgetriebeöle mit hoher thermischer Stabilität und Verschleißschutz.",
+      transmissions_certs: ["ATF Dexron VI", "ZF TE‑ML 11", "MB 236.14"],
 
       brakeFluid: "Bremsflüssigkeit",
       brakeFluid_desc:
@@ -178,17 +217,30 @@ const translations = {
 
   fr: {
     hero: {
-      title: "Le Perfectionnisme Allemande pour la Performance maintenant en Angola",
+      title: "Le Perfectionnisme Allemand pour la Performance maintenant en Angola",
       subtitle:
         "Lubrifiants HIGHTEC de nouvelle génération, conçus pour résister à la chaleur extrême et protéger votre moteur dans les conditions les plus exigeantes.",
       cta: "Voir le Catalogue",
+      approvals: "Homologations Officielles",
     },
 
     products: {
       title: "Gamme Angola",
+
       ligeiros: "Véhicules Légers",
+      ligeiros_desc:
+        "Lubrifiants HIGHTEC formulés pour les moteurs modernes, garantissant une protection thermique maximale et une efficacité optimale.",
+      ligeiros_certs: ["API SP", "ACEA C3", "BMW LL‑04", "MB 229.52"],
+
       pesados: "Véhicules Lourds",
+      pesados_desc:
+        "Huiles haute résistance pour moteurs diesel lourds, conçues pour de longs intervalles et des conditions sévères.",
+      pesados_certs: ["API CK‑4", "ACEA E9", "Volvo VDS‑4.5"],
+
       transmissions: "Transmissions",
+      transmissions_desc:
+        "Fluides de transmission automatiques et manuels offrant une stabilité thermique supérieure et une protection anti‑usure.",
+      transmissions_certs: ["ATF Dexron VI", "ZF TE‑ML 11", "MB 236.14"],
 
       brakeFluid: "Liquide de Freins",
       brakeFluid_desc:
@@ -250,7 +302,6 @@ export default function App() {
       >
         <Header lang={lang} setLang={setLang} />
 
-        {/* MAIN OCUPA O ESPAÇO ENTRE HEADER E FOOTER */}
         <main className="flex-1">
           <Routes>
             <Route path="/" element={<Home t={t} />} />

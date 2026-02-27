@@ -1,4 +1,6 @@
-export default function Home({ t }) {
+import { motion } from "motion/react";
+
+export default function Home({ t }: any) {
   return (
     <section
       className="
@@ -13,15 +15,33 @@ export default function Home({ t }) {
         pt-44
       "
     >
-      <h1 className="text-4xl md:text-6xl font-extrabold text-white max-w-4xl">
+      {/* TÍTULO */}
+      <motion.h1
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="text-4xl md:text-6xl font-extrabold text-white max-w-4xl"
+      >
         {t.hero.title}
-      </h1>
+      </motion.h1>
 
-      <p className="mt-6 text-lg md:text-xl text-white/90 max-w-3xl leading-relaxed">
+      {/* SUBTÍTULO */}
+      <motion.p
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="mt-6 text-lg md:text-xl text-white/90 max-w-3xl leading-relaxed"
+      >
         {t.hero.subtitle}
-      </p>
+      </motion.p>
 
-      <div className="mt-8 flex gap-4 flex-wrap justify-center">
+      {/* BOTÕES */}
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        className="mt-8 flex gap-4 flex-wrap justify-center"
+      >
         <a
           href="/produtos"
           className="px-8 py-3 bg-red-600 hover:bg-red-700 rounded-lg font-semibold transition shadow-lg text-white"
@@ -36,12 +56,17 @@ export default function Home({ t }) {
         >
           ROWE Racing
         </a>
-      </div>
+      </motion.div>
 
-      {/* LOGOS BMW / PORSCHE */}
-      <div className="mt-10 flex flex-col items-center">
+      {/* HOMOLOGAÇÕES + LOGOS */}
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.2 }}
+        className="mt-10 flex flex-col items-center"
+      >
         <span className="text-xs uppercase tracking-widest text-yellow-400 mb-4">
-          Homologações de fabricantes
+          {t.hero.approvals}
         </span>
 
         <div className="flex items-center gap-12">
@@ -57,7 +82,7 @@ export default function Home({ t }) {
             className="h-16 opacity-70 hover:opacity-100 transition"
           />
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

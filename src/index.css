@@ -46,13 +46,10 @@ html, body, #root {
   }
 }
 
-@keyframes autoScroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+/* ANIMAÇÃO CORRIGIDA */
+@keyframes auto-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
 .no-scrollbar::-webkit-scrollbar {
@@ -64,10 +61,7 @@ html, body, #root {
   scrollbar-width: none;
 }
 
-/* Pausar o endless quando o rato paira sobre um cartão (via container) */
+/* Pausar o endless quando o rato paira */
 .endless-container:hover .endless-track {
   animation-play-state: paused;
 }
-
-
-
