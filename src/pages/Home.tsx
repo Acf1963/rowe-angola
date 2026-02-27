@@ -58,29 +58,47 @@ export default function Home({ t }: any) {
         </a>
       </motion.div>
 
-      {/* HOMOLOGAÇÕES + LOGOS */}
+      {/* HOMOLOGAÇÕES + LINHA ANIMADA */}
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.2 }}
-        className="mt-10 flex flex-col items-center"
+        className="mt-10 flex flex-col items-center w-full"
       >
         <span className="text-xs uppercase tracking-widest text-yellow-400 mb-4">
           {t.hero.approvals}
         </span>
 
-        <div className="flex items-center gap-12">
-          <img
-            src="/images/logo/bmw.png"
-            alt="BMW"
-            className="h-16 opacity-70 hover:opacity-100 transition"
-          />
+        {/* LINHA ANIMADA DE LOGOS */}
+        <div className="relative w-full overflow-hidden py-2">
+          <div className="flex items-center gap-16 animate-[scroll-logos_25s_linear_infinite] whitespace-nowrap">
 
-          <img
-            src="/images/logo/porsche.png"
-            alt="Porsche"
-            className="h-16 opacity-70 hover:opacity-100 transition"
-          />
+            {/* BMW */}
+            <img src="/images/logo/bmw.png" alt="BMW" className="h-18 opacity-70 hover:opacity-100 transition" />
+
+            {/* Porsche */}
+            <img src="/images/logo/porsche.png" alt="Porsche" className="h-14 opacity-70 hover:opacity-100 transition" />
+
+            {/* Mercedes-Benz */}
+            <img src="/images/logo/mercedes.png" alt="Mercedes-Benz" className="h-14 opacity-70 hover:opacity-100 transition" />
+
+            {/* Volkswagen */}
+            <img src="/images/logo/vw.png" alt="Volkswagen" className="h-18 opacity-70 hover:opacity-100 transition" />
+
+            {/* Opel */}
+            <img src="/images/logo/opel.png" alt="Opel" className="h-14 opacity-70 hover:opacity-100 transition" />
+
+            {/* Ford */}
+            <img src="/images/logo/ford.png" alt="Ford" className="h-28 opacity-70 hover:opacity-100 transition" />
+
+            {/* DUPLICAÇÃO PARA LOOP INFINITO */}
+            <img src="/images/logo/bmw.png" className="h-18 opacity-70 hover:opacity-100 transition" />
+            <img src="/images/logo/porsche.png" className="h-14 opacity-70 hover:opacity-100 transition" />
+            <img src="/images/logo/mercedes.png" className="h-14 opacity-70 hover:opacity-100 transition" />
+            <img src="/images/logo/vw.png" className="h-18 opacity-70 hover:opacity-100 transition" />
+            <img src="/images/logo/opel.png" className="h-14 opacity-70 hover:opacity-100 transition" />
+            <img src="/images/logo/ford.png" className="h-28 opacity-70 hover:opacity-100 transition" />
+          </div>
         </div>
       </motion.div>
     </section>
