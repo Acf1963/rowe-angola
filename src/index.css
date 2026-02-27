@@ -46,10 +46,16 @@ html, body, #root {
   }
 }
 
-/* ANIMAÇÃO DA LINHA DE LOGOS */
+/* ANIMAÇÃO DO CARROSSEL */
 @keyframes scroll-logos {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
+}
+
+.animate-scroll-logos {
+  display: flex;
+  width: max-content;
+  animation: scroll-logos 25s linear infinite;
 }
 
 /* ANIMAÇÃO DO FUNDO */

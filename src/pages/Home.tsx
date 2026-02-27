@@ -69,35 +69,30 @@ export default function Home({ t }: any) {
           {t.hero.approvals}
         </span>
 
-        {/* LINHA ANIMADA DE LOGOS */}
+        {/* CARROSSEL DE LOGOS */}
         <div className="relative w-full overflow-hidden py-2">
-          <div className="flex items-center gap-16 animate-[scroll-logos_25s_linear_infinite] whitespace-nowrap">
+          <div className="flex animate-scroll-logos whitespace-nowrap">
 
-            {/* BMW */}
-            <img src="/images/logo/bmw.png" alt="BMW" className="h-18 opacity-70 hover:opacity-100 transition" />
+            {/* BLOCO 1 */}
+            <div className="flex items-center shrink-0">
+              <img src="/images/logo/ford.png" className="h-24 object-contain mx-12 opacity-70 hover:opacity-100 transition" />
+              <img src="/images/logo/bmw.png" className="h-16 object-contain mx-16 opacity-70 hover:opacity-100 transition" />
+              <img src="/images/logo/porsche.png" className="h-16 object-contain mx-16 opacity-70 hover:opacity-100 transition" />
+              <img src="/images/logo/mercedes.png" className="h-16 object-contain mx-20 opacity-70 hover:opacity-100 transition" />
+              <img src="/images/logo/vw.png" className="h-16 object-contain mx-16 opacity-70 hover:opacity-100 transition" />
+              <img src="/images/logo/opel.png" className="h-16 object-contain mx-20 opacity-70 hover:opacity-100 transition" />
+            </div>
 
-            {/* Porsche */}
-            <img src="/images/logo/porsche.png" alt="Porsche" className="h-14 opacity-70 hover:opacity-100 transition" />
+            {/* BLOCO 2 (CÓPIA EXATA) */}
+            <div className="flex items-center shrink-0">
+              <img src="/images/logo/ford.png" className="h-24 object-contain mx-12 opacity-70 hover:opacity-100 transition" />
+              <img src="/images/logo/bmw.png" className="h-16 object-contain mx-16 opacity-70 hover:opacity-100 transition" />
+              <img src="/images/logo/porsche.png" className="h-16 object-contain mx-16 opacity-70 hover:opacity-100 transition" />
+              <img src="/images/logo/mercedes.png" className="h-16 object-contain mx-20 opacity-70 hover:opacity-100 transition" />
+              <img src="/images/logo/vw.png" className="h-16 object-contain mx-16 opacity-70 hover:opacity-100 transition" />
+              <img src="/images/logo/opel.png" className="h-16 object-contain mx-20 opacity-70 hover:opacity-100 transition" />
+            </div>
 
-            {/* Mercedes-Benz */}
-            <img src="/images/logo/mercedes.png" alt="Mercedes-Benz" className="h-14 opacity-70 hover:opacity-100 transition" />
-
-            {/* Volkswagen */}
-            <img src="/images/logo/vw.png" alt="Volkswagen" className="h-18 opacity-70 hover:opacity-100 transition" />
-
-            {/* Opel */}
-            <img src="/images/logo/opel.png" alt="Opel" className="h-14 opacity-70 hover:opacity-100 transition" />
-
-            {/* Ford */}
-            <img src="/images/logo/ford.png" alt="Ford" className="h-28 opacity-70 hover:opacity-100 transition" />
-
-            {/* DUPLICAÇÃO PARA LOOP INFINITO */}
-            <img src="/images/logo/bmw.png" className="h-18 opacity-70 hover:opacity-100 transition" />
-            <img src="/images/logo/porsche.png" className="h-14 opacity-70 hover:opacity-100 transition" />
-            <img src="/images/logo/mercedes.png" className="h-14 opacity-70 hover:opacity-100 transition" />
-            <img src="/images/logo/vw.png" className="h-18 opacity-70 hover:opacity-100 transition" />
-            <img src="/images/logo/opel.png" className="h-14 opacity-70 hover:opacity-100 transition" />
-            <img src="/images/logo/ford.png" className="h-28 opacity-70 hover:opacity-100 transition" />
           </div>
         </div>
       </motion.div>
