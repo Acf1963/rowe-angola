@@ -3,6 +3,7 @@ import { useState, useMemo } from "react";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ScrollToTop from "@/components/ScrollToTop";
 
 import Home from "@/pages/Home";
 import ProductsPage from "@/pages/Products";
@@ -77,10 +78,6 @@ const translations = {
     },
   },
 
-  // ======================================================
-  //  INGLÊS
-  // ======================================================
-
   gb: {
     hero: {
       title: "German Perfectionism for Performance, now in Angola",
@@ -144,10 +141,6 @@ const translations = {
     },
   },
 
-  // ======================================================
-  //  ALEMÃO
-  // ======================================================
-
   de: {
     hero: {
       title: "Deutsche Perfektion für Performance, jetzt in Angola",
@@ -210,10 +203,6 @@ const translations = {
       location: "Unser Standort in Luanda",
     },
   },
-
-  // ======================================================
-  //  FRANCÊS
-  // ======================================================
 
   fr: {
     hero: {
@@ -290,6 +279,8 @@ export default function App() {
 
   return (
     <BrowserRouter>
+      <ScrollToTop />
+
       <div
         id="page-background"
         className="
