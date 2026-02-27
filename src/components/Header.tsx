@@ -11,9 +11,10 @@ export default function Header({ lang, setLang }: any) {
         bg-black/40 backdrop-blur-md
         border-b border-white/10
         px-4 sm:px-6 py-3
+        pointer-events-none
       "
     >
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
+      <div className="max-w-7xl mx-auto flex items-center justify-between pointer-events-auto">
 
         {/* LOGO + ANGOLA */}
         <div className="flex items-center gap-3 relative" style={{ height: "40px" }}>
@@ -61,7 +62,7 @@ export default function Header({ lang, setLang }: any) {
 
       {/* MENU MOBILE */}
       {open && (
-        <div className="md:hidden bg-black/80 text-yellow-400 px-6 py-4 flex flex-col gap-4">
+        <div className="md:hidden bg-black/80 text-yellow-400 px-6 py-4 flex flex-col gap-4 pointer-events-auto">
 
           <Link to="/" className="hover:text-white transition" onClick={() => setOpen(false)}>Início</Link>
           <Link to="/produtos" className="hover:text-white transition" onClick={() => setOpen(false)}>Produtos</Link>
