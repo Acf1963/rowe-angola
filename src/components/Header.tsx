@@ -16,14 +16,20 @@ export default function Header({ lang, setLang }: any) {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
 
         {/* LOGO + ANGOLA */}
-        <div className="flex items-center gap-3" style={{ height: "40px" }}>
+        <div className="flex items-center gap-3 relative" style={{ height: "40px" }}>
           <img
             src="/images/logo/lg02.png"
             alt="ROWE MOTOR OIL"
             className="h-8 sm:h-10 object-contain"
             style={{ transform: "scale(3.8)", transformOrigin: "left center" }}
           />
-          <span className="text-yellow-400 font-bold text-sm sm:text-base tracking-wide ml-16">
+
+          <span
+            className="
+              text-yellow-400 font-bold text-sm sm:text-base tracking-wide
+              absolute left-[135px] sm:left-[155px]
+            "
+          >
             ANGOLA
           </span>
         </div>
