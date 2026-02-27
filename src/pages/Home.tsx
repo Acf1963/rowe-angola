@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import { Link } from "react-router-dom";
 
 export default function Home({ t }: any) {
   return (
@@ -12,7 +13,7 @@ export default function Home({ t }: any) {
         justify-center
         text-center
         px-6
-        pt-44
+        pt-[120px]
       "
     >
       {/* TÍTULO */}
@@ -42,12 +43,12 @@ export default function Home({ t }: any) {
         transition={{ duration: 1 }}
         className="mt-8 flex gap-4 flex-wrap justify-center"
       >
-        <a
-          href="/produtos"
+        <Link
+          to="/produtos"
           className="px-8 py-3 bg-red-600 hover:bg-red-700 rounded-lg font-semibold transition shadow-lg text-white"
         >
           {t.hero.cta}
-        </a>
+        </Link>
 
         <a
           href="https://www.rowe-oil.com/en/rowe-racing"
@@ -83,7 +84,7 @@ export default function Home({ t }: any) {
               <img src="/images/logo/opel.png" className="h-16 object-contain mx-20 opacity-70 hover:opacity-100 transition" />
             </div>
 
-            {/* BLOCO 2 (CÓPIA EXATA) */}
+            {/* BLOCO 2 */}
             <div className="flex items-center shrink-0">
               <img src="/images/logo/ford.png" className="h-24 object-contain mx-12 opacity-70 hover:opacity-100 transition" />
               <img src="/images/logo/bmw.png" className="h-16 object-contain mx-16 opacity-70 hover:opacity-100 transition" />
