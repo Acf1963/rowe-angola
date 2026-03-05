@@ -46,7 +46,7 @@ export default function HistoryPage({ t }: any) {
           </div>
 
           <div className="md:w-1/2">
-            <p className="leading-relaxed text-xl text-yellow-400 text-justify">
+            <p className="leading-relaxed text-xl text-white text-justify">
               {t.history.section1}
             </p>
           </div>
@@ -71,17 +71,17 @@ export default function HistoryPage({ t }: any) {
           className="float-right ml-6 mb-4 w-72 rounded-lg shadow-lg"
         />
 
-        <p className="leading-relaxed text-xl text-yellow-300 text-justify">
+        <p className="leading-relaxed text-xl text-white text-justify">
           {t.history.section2.p}
         </p>
 
-        <ul className="mt-4 space-y-2 text-xl text-yellow-300">
+        <ul className="mt-4 space-y-2 text-xl text-white">
           {t.history.section2.list.map((item: string, i: number) => (
             <li key={i}>• {item}</li>
           ))}
         </ul>
 
-        <p className="mt-4 text-[26px] text-yellow-300 font-bold-italic text-justify">
+        <p className="mt-4 text-[26px] text-white font-bold-italic text-justify">
           {t.history.section2.footer}
         </p>
 
@@ -105,17 +105,17 @@ export default function HistoryPage({ t }: any) {
           className="float-left mr-6 mb-4 w-72 rounded-lg shadow-lg"
         />
 
-        <p className="leading-relaxed text-xl text-yellow-300 text-justify">
+        <p className="leading-relaxed text-xl text-white text-justify">
           {t.history.section3.p}
         </p>
 
-        <ul className="mt-4 space-y-2 text-xl text-yellow-300">
+        <ul className="mt-4 space-y-2 text-xl text-white">
           {t.history.section3.list.map((item: string, i: number) => (
             <li key={i}>• {item}</li>
           ))}
         </ul>
 
-        <p className="mt-4 text-[24px] text-yellow-400 font-bold-italic text-justify">
+        <p className="mt-4 text-[24px] text-white font-bold-italic text-justify">
           {t.history.section3.footer}
         </p>
 
@@ -136,15 +136,15 @@ export default function HistoryPage({ t }: any) {
         <div className="flex flex-col md:flex-row items-start gap-8">
 
           <div className="md:w-1/2">
-            <p className="leading-relaxed text-xl text-yellow-300 text-justify">
+            <p className="leading-relaxed text-xl text-white text-justify">
               {t.history.section4.p1}
             </p>
 
-            <p className="leading-relaxed text-xl text-yellow-300 text-justify mt-4">
+            <p className="leading-relaxed text-xl text-white text-justify mt-4">
               {t.history.section4.p2}
             </p>
 
-            <p className="mt-4 text-[24px] text-yellow-300 font-bold-italic text-justify">
+            <p className="mt-4 text-[24px] text-white font-bold-italic text-justify">
               {t.history.section4.p3}
             </p>
           </div>
