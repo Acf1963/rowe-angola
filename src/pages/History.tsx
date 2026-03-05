@@ -49,7 +49,7 @@ export default function HistoryPage({ t }: any) {
 
           {/* TEXTO À DIREITA */}
           <div className="md:w-1/2">
-            <p className="leading-relaxed text-xl text-[#3a2a1a] text-justify">
+            <p className="leading-relaxed text-xl text-yellow-300 text-justify">
               A ROWE nasceu na Alemanha com a ambição de redefinir o que significa
               performance, durabilidade e engenharia aplicada ao mundo real. Desde o
               início, a marca assumiu um compromisso inegociável: <strong>não basta
@@ -80,14 +80,14 @@ export default function HistoryPage({ t }: any) {
           className="float-right ml-6 mb-4 w-72 rounded-lg shadow-lg"
         />
 
-        <p className="leading-relaxed text-xl text-[#3a2a1a] text-justify">
+        <p className="leading-relaxed text-xl text-yellow-300 text-justify">
           A presença da ROWE nos desportos motorizados é mais do que patrocínio:
           é um laboratório vivo. A marca está profundamente envolvida em
           competições onde cada segundo conta e onde a fiabilidade decide
           campeonatos.
         </p>
 
-        <ul className="mt-4 space-y-2 text-xl text-[#3a2a1a]">
+        <ul className="mt-4 space-y-2 text-xl text-yellow-300">
           <li>• ROWE Racing como equipa de referência no endurance europeu</li>
           <li>• Participação nas 24 Horas de Nürburgring e Spa</li>
           <li>• Desenvolvimento de lubrificantes testados em condições extremas</li>
@@ -118,12 +118,12 @@ export default function HistoryPage({ t }: any) {
           className="float-left mr-6 mb-4 w-72 rounded-lg shadow-lg"
         />
 
-        <p className="leading-relaxed text-xl text-[#3a2a1a] text-justify">
+        <p className="leading-relaxed text-xl text-yellow-300 text-justify">
           Para além do desporto, a ROWE está presente em setores essenciais da
           economia global:
         </p>
 
-        <ul className="mt-4 space-y-2 text-xl text-[#3a2a1a]">
+        <ul className="mt-4 space-y-2 text-xl text-yellow-300">
           <li>• Automóveis ligeiros e pesados</li>
           <li>• Equipamentos industriais</li>
           <li>• Máquinas agrícolas</li>
@@ -131,7 +131,7 @@ export default function HistoryPage({ t }: any) {
           <li>• Sistemas hidráulicos e aplicações especiais</li>
         </ul>
 
-        <p className="mt-4 space-y-2 text-[24px] text-yellow-300 font-bold-italic text-justify">
+        <p className="mt-4 space-y-2 text-[24px] text-yellow-400 font-bold-italic text-justify">
           A marca tornou‑se sinónimo de eficiência energética, proteção avançada
           contra desgaste e durabilidade em ambientes severos.
         </p>
