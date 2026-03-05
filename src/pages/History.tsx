@@ -44,14 +44,12 @@ export default function HistoryPage({ t }: any) {
               alt="ROWE Racing em pista"
               className="w-full rounded-lg shadow-lg mb-3"
             />
-            <p className="text-sm text-white/70">
-              Imagem 1 – ROWE Racing em pista
-            </p>
+            
           </div>
 
           {/* TEXTO À DIREITA */}
           <div className="md:w-1/2">
-            <p className="leading-relaxed text-lg text-white/90 text-justify">
+            <p className="leading-relaxed text-xl text-[#3a2a1a] text-justify">
               A ROWE nasceu na Alemanha com a ambição de redefinir o que significa
               performance, durabilidade e engenharia aplicada ao mundo real. Desde o
               início, a marca assumiu um compromisso inegociável: <strong>não basta
@@ -82,21 +80,21 @@ export default function HistoryPage({ t }: any) {
           className="float-right ml-6 mb-4 w-72 rounded-lg shadow-lg"
         />
 
-        <p className="leading-relaxed text-lg text-white/90 text-justify">
+        <p className="leading-relaxed text-xl text-[#3a2a1a] text-justify">
           A presença da ROWE nos desportos motorizados é mais do que patrocínio:
           é um laboratório vivo. A marca está profundamente envolvida em
           competições onde cada segundo conta e onde a fiabilidade decide
           campeonatos.
         </p>
 
-        <ul className="mt-4 space-y-2 text-white/90">
+        <ul className="mt-4 space-y-2 text-xl text-[#3a2a1a]">
           <li>• ROWE Racing como equipa de referência no endurance europeu</li>
           <li>• Participação nas 24 Horas de Nürburgring e Spa</li>
           <li>• Desenvolvimento de lubrificantes testados em condições extremas</li>
           <li>• Transferência direta de tecnologia da pista para o consumidor</li>
         </ul>
 
-        <p className="mt-4 text-yellow-300 font-semibold italic">
+        <p className="mt-4 space-y-2 text-[26px] text-yellow-300 font-bold-italic text-justify">
           Se resiste na pista, supera qualquer desafio na estrada.
         </p>
 
@@ -120,12 +118,12 @@ export default function HistoryPage({ t }: any) {
           className="float-left mr-6 mb-4 w-72 rounded-lg shadow-lg"
         />
 
-        <p className="leading-relaxed text-lg text-white/90 text-justify">
+        <p className="leading-relaxed text-xl text-[#3a2a1a] text-justify">
           Para além do desporto, a ROWE está presente em setores essenciais da
           economia global:
         </p>
 
-        <ul className="mt-4 space-y-2 text-white/90">
+        <ul className="mt-4 space-y-2 text-xl text-[#3a2a1a]">
           <li>• Automóveis ligeiros e pesados</li>
           <li>• Equipamentos industriais</li>
           <li>• Máquinas agrícolas</li>
@@ -133,7 +131,7 @@ export default function HistoryPage({ t }: any) {
           <li>• Sistemas hidráulicos e aplicações especiais</li>
         </ul>
 
-        <p className="mt-4 leading-relaxed text-lg text-white/90 text-justify">
+        <p className="mt-4 space-y-2 text-[24px] text-yellow-300 font-bold-italic text-justify">
           A marca tornou‑se sinónimo de eficiência energética, proteção avançada
           contra desgaste e durabilidade em ambientes severos.
         </p>
@@ -148,7 +146,7 @@ export default function HistoryPage({ t }: any) {
   transition={{ duration: 0.8 }}
   className="mb-20"
 >
-  <h2 className="text-3xl font-bold text-yellow-400 mb-6">
+  <h2 className="text-3xl font-bold text-yellow-300 mb-6">
     Sustentabilidade e Inovação
   </h2>
 
@@ -156,7 +154,7 @@ export default function HistoryPage({ t }: any) {
 
     {/* TEXTO À ESQUERDA */}
     <div className="md:w-1/2">
-      <p className="leading-relaxed text-lg text-white/90 text-justify">
+      <p className="leading-relaxed text-xl text-yellow-300 text-justify">
         A ROWE investe fortemente em <strong>produção neutra em carbono</strong>,
         <strong> reciclagem avançada</strong> e <strong>redução contínua de emissões</strong>,
         desenvolvendo lubrificantes de nova geração que combinam alta performance,
@@ -166,7 +164,7 @@ export default function HistoryPage({ t }: any) {
         condições extremas.
       </p>
 
-      <p className="leading-relaxed text-lg text-white/90 text-justify mt-4">
+      <p className="leading-relaxed text-xl text-yellow-300 text-justify mt-4">
         Para Angola e África, estes avanços traduzem‑se em benefícios diretos:
         motores que duram mais, menor consumo de combustível, intervalos de
         manutenção mais longos e maior fiabilidade em ambientes de calor intenso,
@@ -175,7 +173,7 @@ export default function HistoryPage({ t }: any) {
         veículos, frotas e maquinaria pesada.
       </p>
 
-      <p className="leading-relaxed text-lg text-white/90 text-justify mt-4">
+      <p className="mt-4 space-y-2 text-[24px] text-yellow-300 font-bold-italic text-justify">
         Uma marca global com responsabilidade local — preparada para impulsionar o
         futuro energético e industrial do continente.
       </p>
@@ -198,21 +196,34 @@ export default function HistoryPage({ t }: any) {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="text-center mt-20"
+        className="mt-20"
       >
-        <p className="text-xl text-white/90 leading-relaxed mb-6">
-          A ROWE chega a Angola com o mesmo ADN que a tornou uma referência
-          global: <strong>performance real, engenharia rigorosa e compromisso
-          com o futuro</strong>.
+        <p className="text-2xl md:text-3xl font-extrabold text-yellow-400 mb-8 text-center">
+          A ROWE chega a Angola com o mesmo ADN que a tornou uma referência global:
+          engenharia alemã de alta performance, inovação contínua e compromisso absoluto
+          com a fiabilidade em qualquer ambiente.
         </p>
 
-        <img
-          src="/images/logo/lg02.png"
-          alt="ROWE Logo"
-          className="mx-auto mb-4 w-64"
-        />
+        {/* LOGO + IMAGEM05 LADO A LADO */}
+        <div className="flex flex-col md:flex-row items-center justify-center gap-10">
 
-        <p className="text-xl font-semibold text-yellow-300">
+          {/* LOGO CENTRADO VERTICALMENTE */}
+          <img
+            src="/images/logo/lg02.png"
+            alt="ROWE Logo"
+            className="w-64 md:w-72"
+          />
+
+          {/* IMAGEM05 À DIREITA COM ALTURA FIXA */}
+          <img
+            src="/images/history/imagem05.png"
+            alt="Mapa estratégico ROWE Angola"
+            className="h-[300px] object-contain"
+          />
+
+        </div>
+
+        <p className="text-xl font-semibold text-yellow-300 text-center mt-10">
           Energia para mover Angola. Tecnologia para impulsionar África.
         </p>
       </motion.div>
