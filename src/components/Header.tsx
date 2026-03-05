@@ -11,7 +11,6 @@ export default function Header({ lang, setLang }: any) {
         bg-black/40 backdrop-blur-md
         border-b border-white/10
         px-4 sm:px-6 py-3
-        pointer-events-none
       "
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between pointer-events-auto">
@@ -81,4 +80,3 @@ export default function Header({ lang, setLang }: any) {
     </header>
   );
 }
-
