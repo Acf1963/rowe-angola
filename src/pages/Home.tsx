@@ -6,7 +6,7 @@ export default function Home({ t }: any) {
     <section
       className="
         w-full
-        h-full
+        min-h-screen
         flex
         flex-col
         items-center

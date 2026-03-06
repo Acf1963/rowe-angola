@@ -431,7 +431,7 @@ export default function App() {
 
         <main className="flex-1 mt-[60px] sm:mt-[80px]">
           <Routes>
-            <Route path="/" element={<Home key={lang} t={t} />} />
+            <Route path="/" element={<Home t={t} />} />
             <Route path="/produtos" element={<ProductsPage t={t} />} />
             <Route path="/historia" element={<HistoryPage t={t} />} />
             <Route path="/contacto" element={<ContactPage t={t} />} />
