@@ -63,24 +63,24 @@ export default function Header({ lang, setLang }: any) {
           </div>
         </div>
 
-        {/* MENU MOBILE — AGORA DENTRO DO CONTAINER CORRETO */}
-        {open && (
-          <div className="md:hidden bg-black/80 text-yellow-400 px-6 py-4 flex flex-col gap-4">
+          {/* MENU MOBILE */}
+          {open && (
+            <div className="md:hidden bg-black/80 text-yellow-400 px-6 py-4 flex flex-col gap-4">
 
-            <Link to="/" className="hover:text-white transition" onClick={() => setOpen(false)}>Início</Link>
-            <Link to="/produtos" className="hover:text-white transition" onClick={() => setOpen(false)}>Produtos</Link>
-            <Link to="/historia" className="hover:text-white transition" onClick={() => setOpen(false)}>História</Link>
-            <Link to="/contacto" className="hover:text-white transition" onClick={() => setOpen(false)}>Contacto</Link>
+              <Link to="/" className="hover:text-white transition" onClick={() => setTimeout(() => setOpen(false), 50)}>Início</Link>
+              <Link to="/produtos" className="hover:text-white transition" onClick={() => setTimeout(() => setOpen(false), 50)}>Produtos</Link>
+              <Link to="/historia" className="hover:text-white transition" onClick={() => setTimeout(() => setOpen(false), 50)}>História</Link>
+              <Link to="/contacto" className="hover:text-white transition" onClick={() => setTimeout(() => setOpen(false), 50)}>Contacto</Link>
 
-            {/* BANDEIRAS MOBILE */}
-            <div className="flex gap-4 mt-4">
-              <img src="/images/flags/ao.png" onClick={() => setLang("ao")} className={`h-6 cursor-pointer ${lang === "ao" ? "opacity-100" : "opacity-50"}`} />
-              <img src="/images/flags/gb.png" onClick={() => setLang("gb")} className={`h-6 cursor-pointer ${lang === "gb" ? "opacity-100" : "opacity-50"}`} />
-              <img src="/images/flags/de.png" onClick={() => setLang("de")} className={`h-6 cursor-pointer ${lang === "de" ? "opacity-100" : "opacity-50"}`} />
-              <img src="/images/flags/fr.png" onClick={() => setLang("fr")} className={`h-6 cursor-pointer ${lang === "fr" ? "opacity-100" : "opacity-50"}`} />
+              {/* BANDEIRAS MOBILE */}
+              <div className="flex gap-4 mt-4">
+                <img src="/images/flags/ao.png" onClick={() => setLang("ao")} className={`h-6 cursor-pointer ${lang === "ao" ? "opacity-100" : "opacity-50"}`} />
+                <img src="/images/flags/gb.png" onClick={() => setLang("gb")} className={`h-6 cursor-pointer ${lang === "gb" ? "opacity-100" : "opacity-50"}`} />
+                <img src="/images/flags/de.png" onClick={() => setLang("de")} className={`h-6 cursor-pointer ${lang === "de" ? "opacity-100" : "opacity-50"}`} />
+                <img src="/images/flags/fr.png" onClick={() => setLang("fr")} className={`h-6 cursor-pointer ${lang === "fr" ? "opacity-100" : "opacity-50"}`} />
+              </div>
             </div>
-          </div>
-        )}
+          )}
       </div>
     </header>
   );
