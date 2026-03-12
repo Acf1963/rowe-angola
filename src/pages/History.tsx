@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 
 export default function HistoryPage({ t }: any) {
   return (
-    <section className="w-full px-6 pt-[30px] pb-20 max-w-5xl mx-auto text-white">
+    <section className="w-full px-6 pt-7.5 pb-20 max-w-5xl mx-auto text-white">
 
       {/* LOGO */}
       <motion.div
@@ -173,7 +173,7 @@ export default function HistoryPage({ t }: any) {
 
         <div className="flex flex-col md:flex-row items-center justify-center gap-10">
           <img src="/images/logo/lg02.png" className="w-64 md:w-72" />
-          <img src="/images/history/imagem05.png" className="h-[300px] object-contain" />
+          <img src="/images/history/imagem05.png" className="h-75 object-contain" />
         </div>
 
         <p className="text-xl font-semibold text-yellow-300 text-center mt-10">

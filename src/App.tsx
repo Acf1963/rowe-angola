@@ -429,7 +429,7 @@ export default function App() {
       >
         <Header lang={lang} setLang={setLang} />
 
-        <main className="flex-1 mt-[60px] sm:mt-[80px]">
+        <main className="flex-1 mt-15 sm:mt-20">
           <Routes>
             <Route path="/" element={<Home t={t} />} />
             <Route path="/produtos" element={<ProductsPage t={t} />} />

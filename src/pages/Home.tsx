@@ -13,7 +13,7 @@ export default function Home({ t }: any) {
         justify-center
         text-center
         px-6
-        pt-[120px]
+        pt-30
       "
     >
       {/* TÍTULO */}

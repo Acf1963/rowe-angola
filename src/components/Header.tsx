@@ -13,26 +13,28 @@ export default function Header({ lang, setLang }: any) {
         px-4 sm:px-6 py-3
       "
     >
-      {/* CONTAINER PRINCIPAL */}
       <div className="max-w-7xl mx-auto flex flex-col pointer-events-auto">
 
         {/* LINHA SUPERIOR */}
         <div className="flex items-center justify-between">
 
           {/* LOGO + ANGOLA */}
-          <div className="flex items-center gap-3 relative" style={{ height: "40px" }}>
-            <img
-              src="/images/logo/lg02.png"
-              alt="ROWE MOTOR OIL"
-              className="h-8 sm:h-10 object-contain"
-              style={{ transform: "scale(3.8)", transformOrigin: "left center" }}
-            />
+          <div className="flex items-center gap-3" style={{ height: "40px" }}>
+            <div className="flex items-center">
+              <img
+                src="/images/logo/lg02.png"
+                alt="ROWE MOTOR OIL"
+                className="h-8 sm:h-10 object-contain"
+                style={{ transform: "scale(3.8)", transformOrigin: "left center" }}
+              />
+            </div>
 
             <span
               className="
-                text-yellow-400 font-bold text-sm sm:text-base tracking-wide
-                absolute left-[135px] sm:left-[155px]
+                text-yellow-400 font-bold tracking-wide
+                text-sm sm:text-base
               "
+              style={{ marginLeft: "95px" }} 
             >
               ANGOLA
             </span>
@@ -56,10 +58,14 @@ export default function Header({ lang, setLang }: any) {
 
           {/* BANDEIRAS DESKTOP */}
           <div className="hidden md:flex gap-2">
-            <img src="/images/flags/ao.png" onClick={() => setLang("ao")} className={`h-5 cursor-pointer ${lang === "ao" ? "opacity-100" : "opacity-50"}`} />
-            <img src="/images/flags/gb.png" onClick={() => setLang("gb")} className={`h-5 cursor-pointer ${lang === "gb" ? "opacity-100" : "opacity-50"}`} />
-            <img src="/images/flags/de.png" onClick={() => setLang("de")} className={`h-5 cursor-pointer ${lang === "de" ? "opacity-100" : "opacity-50"}`} />
-            <img src="/images/flags/fr.png" onClick={() => setLang("fr")} className={`h-5 cursor-pointer ${lang === "fr" ? "opacity-100" : "opacity-50"}`} />
+            {["ao", "gb", "de", "fr"].map((flag) => (
+              <img
+                key={flag}
+                src={`/images/flags/${flag}.png`}
+                onClick={() => setLang(flag)}
+                className={`h-5 cursor-pointer ${lang === flag ? "opacity-100" : "opacity-50"}`}
+              />
+            ))}
           </div>
         </div>
 
@@ -67,63 +73,32 @@ export default function Header({ lang, setLang }: any) {
         {open && (
           <div className="md:hidden bg-black/80 text-yellow-400 px-6 py-4 flex flex-col gap-4">
 
-            <Link
-              to="/"
-              className="hover:text-white transition"
-              onClick={() => setTimeout(() => setOpen(false), 80)}
-            >
-              Início
-            </Link>
-
-            <Link
-              to="/produtos"
-              className="hover:text-white transition"
-              onClick={() => setTimeout(() => setOpen(false), 80)}
-            >
-              Produtos
-            </Link>
-
-            <Link
-              to="/historia"
-              className="hover:text-white transition"
-              onClick={() => setTimeout(() => setOpen(false), 80)}
-            >
-              História
-            </Link>
-
-            <Link
-              to="/contacto"
-              className="hover:text-white transition"
-              onClick={() => setTimeout(() => setOpen(false), 80)}
-            >
-              Contacto
-            </Link>
+            {[
+              { to: "/", label: "Início" },
+              { to: "/produtos", label: "Produtos" },
+              { to: "/historia", label: "História" },
+              { to: "/contacto", label: "Contacto" },
+            ].map((item) => (
+              <Link
+                key={item.to}
+                to={item.to}
+                className="hover:text-white transition"
+                onClick={() => setTimeout(() => setOpen(false), 80)}
+              >
+                {item.label}
+              </Link>
+            ))}
 
             {/* BANDEIRAS MOBILE */}
             <div className="flex gap-4 mt-4">
-              <img
-                src="/images/flags/ao.png"
-                onClick={() => { setLang("ao"); setTimeout(() => setOpen(false), 80); }}
-                className={`h-6 cursor-pointer ${lang === "ao" ? "opacity-100" : "opacity-50"}`}
-              />
-
-              <img
-                src="/images/flags/gb.png"
-                onClick={() => { setLang("gb"); setTimeout(() => setOpen(false), 80); }}
-                className={`h-6 cursor-pointer ${lang === "gb" ? "opacity-100" : "opacity-50"}`}
-              />
-
-              <img
-                src="/images/flags/de.png"
-                onClick={() => { setLang("de"); setTimeout(() => setOpen(false), 80); }}
-                className={`h-6 cursor-pointer ${lang === "de" ? "opacity-100" : "opacity-50"}`}
-              />
-
-              <img
-                src="/images/flags/fr.png"
-                onClick={() => { setLang("fr"); setTimeout(() => setOpen(false), 80); }}
-                className={`h-6 cursor-pointer ${lang === "fr" ? "opacity-100" : "opacity-50"}`}
-              />
+              {["ao", "gb", "de", "fr"].map((flag) => (
+                <img
+                  key={flag}
+                  src={`/images/flags/${flag}.png`}
+                  onClick={() => { setLang(flag); setTimeout(() => setOpen(false), 80); }}
+                  className={`h-6 cursor-pointer ${lang === flag ? "opacity-100" : "opacity-50"}`}
+                />
+              ))}
             </div>
           </div>
         )}

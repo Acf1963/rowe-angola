@@ -15,7 +15,7 @@ interface ProductCardProps {
 const ProductCard: React.FC<ProductCardProps> = ({ cat }) => {
   return (
     <div
-      className="card min-w-[280px] max-w-[280px] mx-3 p-4 rounded-xl bg-black/40 backdrop-blur-sm border border-yellow-400/30 hover:border-yellow-400/60 hover:shadow-[0_0_20px_rgba(255,200,80,0.25)] transition-all duration-300 whitespace-normal break-words"
+      className="card min-w-70 max-w-70 mx-3 p-4 rounded-xl bg-black/40 backdrop-blur-sm border border-yellow-400/30 hover:border-yellow-400/60 hover:shadow-[0_0_20px_rgba(255,200,80,0.25)] transition-all duration-300 whitespace-normal flex-wrap"
     >
       <div className="flex justify-center mb-2">{cat.icon}</div>
 
@@ -34,7 +34,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ cat }) => {
       </p>
 
       <div className="flex flex-wrap justify-center gap-1 mb-2">
-        {cat.certs.map((cert) => (
+        {cat.certs.map((cert: string) => (
           <div
             key={cert}
             className="px-3 py-1 rounded-full border border-yellow-400 bg-black/40 backdrop-blur-sm"
