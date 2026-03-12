@@ -3,7 +3,7 @@ export default function Footer() {
     <footer
       className="
         w-full 
-        py-8 
+        py-3 
         text-center 
         text-white 
         bg-transparent 
@@ -15,7 +15,7 @@ export default function Footer() {
         © {new Date().getFullYear()} ROWE Angola — Todos os direitos reservados.
       </p>
 
-      <p className="text-xs opacity-60 mt-2">
+      <p className="text-xs opacity-60 mt-1">
         HIGHTEC Lubrificantes Premium • Tecnologia Alemã
       </p>
     </footer>
